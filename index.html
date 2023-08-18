@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   
+    <script>
+       //IF ,ELSE,ELSE IF AND SWITCH AND BREAK
+       //IF
+       /*
+        if(condition){
+            //code to excute if the condition is true
+        }
+       */
+       let x=50;
+       let y=10;
+       if(x>y){
+        console.log('x is greater than y')
+       }
+
+       const hour= new Date().getHours();
+       console.log(hour)
+       if(hour<18){
+        console.log('Good day')
+       }else{
+        console.log('Good night')
+       }
+
+       //ELSE IF
+       if(hour<12){
+        console.log("Good morning")
+       }else if(hour<15){
+        console.log("Good Afternoon")
+       }else if(hour<19){
+        console.log("Good evening")
+       }else{
+        console.log("Good night")
+       }
+
+
+       //Switch
+       /*
+       SYNTAX:
+
+       switch(expression){
+        case 1:
+        //code to execute
+        break;
+        case 2:
+        //codee to execute;
+        break;
+        default:
+        //code to execute
+       }
+       */
+
+       const day=new Date().getDay();
+       console.log(day)
+       switch(day){
+        case 0:
+        console.log("Sunday")
+        break;
+        case 1:
+        console.log("Monday");
+        break;
+        case 2:
+        console.log('Tuesday')
+        break;
+        case 3:
+        console.log("Wednesday");
+        break;
+        case 4:
+        console.log("Thursday");
+        break;
+        case 5:
+        console.log("Friday");
+        break;
+        case 6:
+        console.log("Saturday");
+       }
+
+
+       switch(hour){
+        case 6:
+        console.log("Saturday")
+        break;
+        case 0:
+        console.log("Sunday")
+        break;
+        default:
+        console.log("Looking forward to this day")
+       }
+
+       
+
+    </script>
+</body>
+</html>
